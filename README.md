@@ -14,7 +14,7 @@
 
 ## Overview
 
-**QR TOOLS** is a professional-grade QR code generator that lets you create customizable QR codes instantly.  
+**QUICK QR** is a professional-grade QR code generator that lets you create customizable QR codes instantly.  
 With real-time preview, URL shortening, and multiple export options, it's your all-in-one solution for generating QR codes for websites, social media, and digital content.
 
 ---
