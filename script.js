@@ -1,7 +1,5 @@
 
-// ============================
 // INITIALIZATION
-// ============================
 
 document.addEventListener('DOMContentLoaded', function() {
     console.log('QR Studio Initializing...');
@@ -26,9 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('QR Studio Ready!');
 });
 
-// ============================
 // STATE
-// ============================
 
 const state = {
     qrCode: null,
@@ -39,9 +35,7 @@ const state = {
     qrInstance: null
 };
 
-// ============================
 // ELEMENTS
-// ============================
 
 let elements = {};
 
@@ -88,9 +82,7 @@ function initElements() {
     updateColorDisplays();
 }
 
-// ============================
 // THEME FUNCTIONALITY
-// ============================
 
 function initTheme() {
     const savedTheme = localStorage.getItem('qrStudioTheme') || 'dark';
@@ -110,9 +102,7 @@ function toggleTheme() {
     showNotification(`Switched to ${isLight ? 'Light' : 'Dark'} mode`, 'info');
 }
 
-// ============================
 // EVENT LISTENERS
-// ============================
 
 function setupEventListeners() {
     console.log('Setting up event listeners...');
@@ -176,9 +166,7 @@ function updateColorDisplays() {
     elements.bgColorDisplay.textContent = elements.bgColor.value.toUpperCase();
 }
 
-// ============================
 // HELPER FUNCTIONS - ADD MISSING ONES
-// ============================
 
 function showNotification(message, type = 'info') {
     // Create notification element if it doesn't exist
@@ -332,9 +320,7 @@ function resetAll() {
     showNotification('All settings have been reset', 'info');
 }
 
-// ============================
 // QR CODE GENERATION - FIXED
-// ============================
 
 function generateQRCode() {
     console.log('Generating QR Code...');
@@ -435,9 +421,7 @@ function generateQRCode() {
     }
 }
 
-// ============================
 // URL SHORTENING
-// ============================
 
 async function shortenURL() {
     console.log('Shortening URL...');
@@ -523,9 +507,7 @@ function useShortenedURL() {
     }
 }
 
-// ============================
 // DOWNLOAD FUNCTIONS
-// ============================
 
 function downloadQRCode(format) {
     if (!state.qrCode || !elements.qrcodeDiv.querySelector('canvas')) {
@@ -631,9 +613,7 @@ function createSVGWithQR(canvas) {
     return svg;
 }
 
-// ============================
 // INITIALIZE ERROR CORRECTION ACTIVE STATE
-// ============================
 
 // Make sure Q (High) is active by default
 document.addEventListener('DOMContentLoaded', function() {
